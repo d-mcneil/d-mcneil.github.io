@@ -12002,4 +12002,17 @@ section {
   aspect-ratio: 2 / 1;
 }
 
+#smartbrain-live {
+  margin-right: 1.6rem !important;
+}
+
+#smartbrain-front {
+  padding: 1.6rem 3.2rem 0 0 !important;
+}
+
+#smartbrain-back {
+  padding-top: 1.6rem !important;
+  padding-left: 0 !important;
+}
+
 /*# sourceMappingURL=index.4a508c1d.css.map */
