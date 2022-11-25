@@ -1,4 +1,4 @@
-h3 + hr {
+#about-section-hr {
   width: 100%;
   opacity: .5;
   border: 0;
@@ -22,7 +22,7 @@ h3 + hr {
   padding-left: 0 !important;
 }
 
-.about-wrapper__info-text, p:first-child {
+.justify {
   text-align: justify !important;
 }
 
