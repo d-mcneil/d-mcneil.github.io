@@ -1,19 +1,29 @@
+h3 + hr {
+  width: 100%;
+  opacity: .5;
+  border: 0;
+}
+
 .project-img {
   width: 100%;
   aspect-ratio: 2 / 1;
 }
 
-#smartbrain-live {
+.full-stack-project-live {
   margin-right: 1.6rem !important;
 }
 
-#smartbrain-front {
+.full-stack-project-front {
   padding: 1.6rem 3.2rem 0 0 !important;
 }
 
-#smartbrain-back {
+.full-stack-project-back {
   padding-top: 1.6rem !important;
   padding-left: 0 !important;
+}
+
+.about-wrapper__info-text, p:first-child {
+  text-align: justify !important;
 }
 
 /*# sourceMappingURL=index.2cdaf7bc.css.map */

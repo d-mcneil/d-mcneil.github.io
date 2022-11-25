@@ -34,7 +34,7 @@
       <h1 class="hero-title load-hidden">
         <span class="text-color-main">Dean McNeil</span>
         <hr>
-        JavaScript and Python Developer
+        Full-Stack Web Developer
       </h1>
       <p class="hero-cta load-hidden">
         <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Learn More</a>
@@ -42,6 +42,8 @@
     </div>
   </section>
   <!-- /END Hero Section -->
+
+
 
   <!-- **** About Section **** -->
   <section id="about">
@@ -55,14 +57,18 @@
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="about-wrapper__info load-hidden">
+            <h3 class="about-wrapper__info-text mb-4">
+              My web development work is focused around <strong>React</strong>, <strong>Redux</strong>,
+              <strong>Node</strong>, <strong>Express</strong>, and <strong>PostgreSQL</strong>.
+            </h3>
             <h3 class="about-wrapper__info-text">
-              My interests in web development lie in the back end,
-              but I do have experience with React. I'm also interested in software development.
+              I am interested in software development as well. I have experience with <strong>Python</strong>,
+              and I've also worked a bit with C.
             </h3>
             <hr>
             <h4 class="about-wrapper__info-text">
-              Some of my interests outside of programming include languages and linguistics,
-              traveling, hiking, soccer, and chess.
+              Some of my interests outside of programming include languages and linguistics, traveling, hiking, soccer,
+              and chess.
             </h4>
             <span class="d-flex mt-5">
               <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="/resume_dean_mcneil.pdf">
@@ -76,11 +82,50 @@
   </section>
   <!-- /END About Section -->
 
+
+
   <!-- **** Projects Section **** -->
   <section id="projects">
     <div class="container">
       <div class="project-wrapper">
         <h2 class="section-title dark-blue-text">Projects</h2>
+
+        <!-- each .row is a project -->
+        <!-- Flashcards -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Flashcards</h3>
+              <div>
+                <p>
+                  Study for an exam or learn a new language with Flashcards.
+                </p>
+                <p class="mb-4">
+                  <strong>Highlights</strong>: React, Redux, Node, Express, PostgreSQL, CRUD, PWA, Responsive
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero full-stack-project-live" href="https://d-mcneil.github.io/flashcards/">
+                See Live
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main full-stack-project-front" href="https://github.com/d-mcneil/flashcards">
+                Source Code - Front End
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main full-stack-project-back" href="https://github.com/d-mcneil/flashcards-api">
+                Source Code - Back End
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="https://d-mcneil.github.io/flashcards/" target="_blank">
+                <div data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5" class="thumbnail rounded js-tilt">
+                  <img alt="Project Image" class="img-fluid project-img" src="/notecards.a5440f04.png">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
 
         <!-- each .row is a project -->
         <!-- SmartBrain -->
@@ -89,18 +134,21 @@
             <div class="project-wrapper__text load-hidden">
               <h3 class="project-wrapper__text-title">SmartBrain Face Detection</h3>
               <div>
+                <p>
+                  SmartBrain detects faces in pictures that users submit by URL and saves how many faces each user
+                  has submitted.
+                </p>
                 <p class="mb-4">
-                  This CRUD app detects faces in pictures that users submit by URL and saves how many faces each user
-                  has submitted. It was built with React, Node, Express, and PostreSQL.
+                  <strong>Highlights</strong>: React, Node, Express, PostgreSQL, CRUD, Responsive
                 </p>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" id="smartbrain-live" href="https://d-mcneil.github.io/smartbrain-face-detection/">
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero full-stack-project-live" href="https://d-mcneil.github.io/smartbrain-face-detection/">
                 See Live
               </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" id="smartbrain-front" href="https://github.com/d-mcneil/smartbrain-face-detection">
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main full-stack-project-front" href="https://github.com/d-mcneil/smartbrain-face-detection">
                 Source Code - Front End
               </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" id="smartbrain-back" href="https://github.com/d-mcneil/smartbrain-face-detection-api">
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main full-stack-project-back" href="https://github.com/d-mcneil/smartbrain-face-detection-api">
                 Source Code - Back End
               </a>
             </div>
@@ -125,9 +173,12 @@
             <div class="project-wrapper__text load-hidden">
               <h3 class="project-wrapper__text-title">Pokémon Breeding Compatibility Checker</h3>
               <div>
-                <p class="mb-4">
+                <p>
                   In the main Pokémon games, Pokémon can breed with other Pokémon in their egg group.
-                  This React app lets you search by Pokémon to find those it can breed with.
+                  This app lets you search by Pokémon to find those it can breed with.
+                </p>
+                <p class="mb-4">
+                  <strong>Highlights</strong>: React, Bootstrap, Responsive
                 </p>
               </div>
               <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://d-mcneil.github.io/pokemon-breeding-compatibility-checker/">
@@ -157,22 +208,24 @@
             <div class="project-wrapper__text load-hidden">
               <h3 class="project-wrapper__text-title">RoboFriends</h3>
               <div>
+                <p>
+                  Search through all of your friends (personified as robots) to find their contact information.
+                </p>
                 <p class="mb-4">
-                  RoboFriends is an app built with React that lets you search through
-                  all of your robot friends to find their contact information.
+                  <strong>Highlights</strong>: React, Redux, PWA, Responsive
                 </p>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://d-mcneil.github.io/robofriends/">
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://d-mcneil.github.io/robofriends-redux/">
                 See Live
               </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/d-mcneil/robofriends">
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/d-mcneil/robofriends-redux">
                 Source Code
               </a>
             </div>
           </div>
           <div class="col-lg-8 col-sm-12">
             <div class="project-wrapper__image load-hidden">
-              <a rel="noreferrer" href="https://d-mcneil.github.io/robofriends/" target="_blank">
+              <a rel="noreferrer" href="https://d-mcneil.github.io/robofriends-redux/" target="_blank">
                 <div data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5" class="thumbnail rounded js-tilt">
                   <img alt="Project Image" class="img-fluid project-img" src="/robofriends.f9e6aa53.png">
                 </div>
@@ -189,10 +242,12 @@
             <div class="project-wrapper__text load-hidden">
               <h3 class="project-wrapper__text-title">Background Gradient Generator</h3>
               <div>
+                <p>
+                  Create a simple background gradient and copy the CSS code to use it for your own website.
+                  If you aren't feeling inspired, you can generate random gradients until you find one that you like.
+                </p>
                 <p class="mb-4">
-                  With this app, you can create a simple background gradient and copy the CSS code
-                  to use it for your own website. If you aren't feeling inspired, you can generate random
-                  gradients until you find one that you like.
+                  <strong>Highlights</strong>: JavaScript, Responsive
                 </p>
               </div>
               <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://d-mcneil.github.io/background-gradient-generator/">
@@ -222,8 +277,11 @@
             <div class="project-wrapper__text load-hidden">
               <h3 class="project-wrapper__text-title">Website Layout CSS Grid</h3>
               <div>
+                <p>
+                  A sample website layout
+                </p>
                 <p class="mb-4">
-                  A sample website layout created using CSS Grid
+                  <strong>Highlights</strong>: CSS Grid, Responsive
                 </p>
               </div>
               <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://d-mcneil.github.io/website-layout-css-grid/">
@@ -253,12 +311,14 @@
             <div class="project-wrapper__text load-hidden">
               <h3 class="project-wrapper__text-title">Password Checker haveibeenpwned.com</h3>
               <div>
+                <p>
+                  Check passwords against the haveibeenpwned.com database to see if any of your passwords have been
+                  leaked in a data breach.
+                  Unlike simply going to haveibeenpwned.com and entering your passwords,
+                  this app lets you check passwords without sending them over the Internet (when used locally).
+                </p>
                 <p class="mb-4">
-                  This Python app checks passwords against the haveibeenpwned.com database to see if
-                  any of your passwords have been leaked in a data breach. However, unlike simply going to
-                  haveibeenpwned.com
-                  and entering your passwords, this app lets you check passwords without sending them over the Internet
-                  (when used locally).
+                  <strong>Highlight</strong>: Python
                 </p>
               </div>
               <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://replit.com/@dmcneil/password-checker-have-i-been-pwned?v=1">
@@ -288,12 +348,13 @@
             <div class="project-wrapper__text load-hidden">
               <h3 class="project-wrapper__text-title">Scrape Hacker News Top Stories</h3>
               <div>
+                <p>
+                  This app returns all of the stories on Hacker News that have more than 100 up-votes.
+                  You can choose how many pages to scrape from, but there is a 30-second delay between scraping each
+                  page.
+                </p>
                 <p class="mb-4">
-                  This scraper, built in Python with the Beautiful Soup library, returns all of the stories on Hacker
-                  News
-                  that have more than 100 up-votes. You can choose how many pages to scrape from, but there is a 30
-                  second delay
-                  between scraping each page.
+                  <strong>Highlights</strong>: Python, Scraper, Beautiful Soup
                 </p>
               </div>
               <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://replit.com/@dmcneil/scrape-hacker-news-top-stories?v=1">
@@ -323,9 +384,12 @@
             <div class="project-wrapper__text load-hidden">
               <h3 class="project-wrapper__text-title">Flask Portfolio</h3>
               <div>
-                <p class="mb-4">
+                <p>
                   This alternative portfolio website was created by taking a template from mashup-template.com,
                   using the Flask framework to program the server, and hosting it on pythonanywhere.com.
+                </p>
+                <p class="mb-4">
+                  <strong>Highlights</strong>: Python, Flask
                 </p>
               </div>
               <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://dmcneil.pythonanywhere.com/">
@@ -355,9 +419,12 @@
             <div class="project-wrapper__text load-hidden">
               <h3 class="project-wrapper__text-title">Guess the Number</h3>
               <div>
+                <p>
+                  If you're incredibly bored and have nothing else to do, play this game against the computer
+                  where you each take turns guessing the other's number.
+                </p>
                 <p class="mb-4">
-                  If you're incredibly bored and have nothing else to do, play this Python game against the computer
-                  where you take turns guessing the other's number.
+                  <strong>Highlight</strong>: Python
                 </p>
               </div>
               <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://replit.com/@dmcneil/guess-the-number?v=1">
@@ -385,6 +452,8 @@
   </section>
   <!-- /END Projects Section -->
 
+
+
   <!-- **** Contact Section **** -->
   <section id="contact">
     <div class="container">
@@ -400,6 +469,8 @@
     </div>
   </section>
   <!-- /END Contact Section -->
+
+
 
   <!-- **** Footer Section **** -->
   <footer class="footer navbar-static-bottom">
