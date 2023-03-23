@@ -26,4 +26,12 @@
   text-align: justify !important;
 }
 
+h4.about-wrapper__info-text {
+  line-height: 1.45 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=index.2cdaf7bc.css.map */

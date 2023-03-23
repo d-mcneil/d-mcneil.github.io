@@ -11491,17 +11491,17 @@ a:hover {
 }
 
 .dark-blue-text {
-  color: #272341 !important;
+  color: #393e46 !important;
 }
 
 .text-color-main {
-  color: #00cdac;
-  -webkit-text-fill-color: #00cdac;
+  color: #56c8ea;
+  -webkit-text-fill-color: #56c8ea;
 }
 
 @supports (-webkit-background-clip: text) or (background-clip: text) {
   .text-color-main {
-    background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+    background-image: linear-gradient(135deg, #56c8ea 0% 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #0000;
@@ -11510,7 +11510,7 @@ a:hover {
 
 @media (max-width: 37.5em) {
   .text-color-main {
-    -webkit-text-fill-color: #00cdac;
+    -webkit-text-fill-color: #56c8ea;
     background-image: none;
   }
 }
@@ -11542,15 +11542,15 @@ a:hover {
 }
 
 .cta-btn--hero {
-  color: #00cdac;
-  -webkit-text-fill-color: #00cdac;
+  color: #56c8ea;
+  -webkit-text-fill-color: #56c8ea;
   border: 2px solid #0000;
-  border-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%) 1;
+  border-image: linear-gradient(135deg, #56c8ea 0% 100%) 1;
 }
 
 @supports (-webkit-background-clip: text) or (background-clip: text) {
   .cta-btn--hero {
-    background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+    background-image: linear-gradient(135deg, #56c8ea 0% 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #0000;
@@ -11559,7 +11559,7 @@ a:hover {
 
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
   .cta-btn--hero {
-    color: #00cdac !important;
+    color: #56c8ea !important;
   }
 
   .cta-btn--hero:hover {
@@ -11569,14 +11569,14 @@ a:hover {
 
 @media (max-width: 37.5em) {
   .cta-btn--hero {
-    -webkit-text-fill-color: #00cdac;
+    -webkit-text-fill-color: #56c8ea;
     background-image: none;
-    border: 2px solid #00cdac;
+    border: 2px solid #56c8ea;
   }
 }
 
 .cta-btn--hero:after {
-  background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+  background-image: linear-gradient(135deg, #56c8ea 0% 100%);
 }
 
 @media (max-width: 37.5em) {
@@ -11592,7 +11592,7 @@ a:hover {
 
 @media (max-width: 37.5em) {
   .cta-btn--hero:hover {
-    -webkit-text-fill-color: #00cdac;
+    -webkit-text-fill-color: #56c8ea;
   }
 }
 
@@ -11610,7 +11610,7 @@ a:hover {
 }
 
 .cta-btn--resume:hover {
-  color: #00cdac;
+  color: #393e46;
   text-decoration: none;
 }
 
@@ -11624,7 +11624,7 @@ a:hover {
 
 .footer {
   color: #fff;
-  background-color: #333;
+  background-color: #56c8ea;
   padding: 4.8rem 0;
 }
 
@@ -11641,14 +11641,14 @@ a:hover {
 
 .footer__text a {
   color: gray;
-  background-color: #333;
+  background-color: #393e46;
   font-size: 1.3rem;
   transition: all .4s;
   display: inline-block;
 }
 
 .footer__text a:hover, .footer__text a:active {
-  color: #02aab0;
+  color: #56c8ea;
   box-shadow: 0 1.5rem 4rem #00000026;
 }
 
@@ -11707,8 +11707,8 @@ section {
   color: #fff;
   height: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  background-color: #02aab0;
-  background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+  background-color: #393e46;
+  background-image: linear-gradient(135deg, #393e46 0% 100%);
   border-top: 0;
   padding-bottom: 10%;
 }
@@ -11775,7 +11775,7 @@ section {
 }
 
 #about .about-wrapper__info-text--important {
-  background: #00c8a8;
+  background: #51c7e9;
   margin: .3rem 0;
   padding: 0 .3rem;
   font-style: italic;
@@ -11796,7 +11796,7 @@ section {
 #contact {
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   color: #fff;
-  background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+  background-image: linear-gradient(135deg, #393e46 0% 100%);
   margin-top: -10rem;
   margin-bottom: -1px;
   padding: 15rem 0 10rem;
@@ -11834,7 +11834,7 @@ section {
 #hero {
   min-height: 100vh;
   height: 100vh;
-  color: #272341;
+  color: #393e46;
   z-index: -1;
   background: #fff;
   border-bottom: 0;
@@ -11906,7 +11906,7 @@ section {
 }
 
 #projects {
-  color: #272341;
+  color: #393e46;
   background-color: #fff;
   margin-top: -10rem;
   padding-top: 15rem;
@@ -11968,7 +11968,7 @@ section {
 }
 
 #projects .project-wrapper__text p > a {
-  color: #00cdac;
+  color: #56c8ea;
 }
 
 #projects .project-wrapper__image {
