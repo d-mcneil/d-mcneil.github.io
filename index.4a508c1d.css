@@ -11793,6 +11793,28 @@ section {
   }
 }
 
+.social-links-about {
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 2rem;
+  display: flex;
+}
+
+.social-links-about a {
+  color: #fff;
+  width: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1.6rem;
+  font-size: 3rem;
+  transition: all .2s ease-in;
+  display: flex;
+}
+
+.social-links-about a:hover {
+  transform: translateY(-2px);
+}
+
 #contact {
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   color: #fff;
