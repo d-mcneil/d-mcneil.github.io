@@ -533,27 +533,191 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"8lqZg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _projects = require("./scripts/projects");
+var _projectsDefault = parcelHelpers.interopDefault(_projects);
+var _addProject = require("./scripts/addProject");
+var _addProjectDefault = parcelHelpers.interopDefault(_addProject);
+var _backgroundGradientGeneratorPng = require("./assets/img/project-img/background-gradient-generator.png");
+var _backgroundGradientGeneratorPngDefault = parcelHelpers.interopDefault(_backgroundGradientGeneratorPng);
+var _flashcardsStudyApplicationPng = require("./assets/img/project-img/flashcards-study-application.png");
+var _flashcardsStudyApplicationPngDefault = parcelHelpers.interopDefault(_flashcardsStudyApplicationPng);
+var _flaskPortfolioPng = require("./assets/img/project-img/flask-portfolio.png");
+var _flaskPortfolioPngDefault = parcelHelpers.interopDefault(_flaskPortfolioPng);
+var _guessTheNumberPng = require("./assets/img/project-img/guess-the-number.png");
+var _guessTheNumberPngDefault = parcelHelpers.interopDefault(_guessTheNumberPng);
+var _passwordCheckerHaveibeenpwnedPng = require("./assets/img/project-img/password-checker-haveibeenpwned.png");
+var _passwordCheckerHaveibeenpwnedPngDefault = parcelHelpers.interopDefault(_passwordCheckerHaveibeenpwnedPng);
+var _pokemonBreedingCompatibilityCheckerPng = require("./assets/img/project-img/pokemon-breeding-compatibility-checker.png");
+var _pokemonBreedingCompatibilityCheckerPngDefault = parcelHelpers.interopDefault(_pokemonBreedingCompatibilityCheckerPng);
+var _pokemonStatCalculatorPng = require("./assets/img/project-img/pokemon-stat-calculator.png");
+var _pokemonStatCalculatorPngDefault = parcelHelpers.interopDefault(_pokemonStatCalculatorPng);
+var _robofriendsPng = require("./assets/img/project-img/robofriends.png");
+var _robofriendsPngDefault = parcelHelpers.interopDefault(_robofriendsPng);
+var _scrapeHackerNewsTopStoriesPng = require("./assets/img/project-img/scrape-hacker-news-top-stories.png");
+var _scrapeHackerNewsTopStoriesPngDefault = parcelHelpers.interopDefault(_scrapeHackerNewsTopStoriesPng);
+var _smartbrainFaceDetectionPng = require("./assets/img/project-img/smartbrain-face-detection.png");
+var _smartbrainFaceDetectionPngDefault = parcelHelpers.interopDefault(_smartbrainFaceDetectionPng);
+var _tenmoMoneyTransfersPng = require("./assets/img/project-img/tenmo-money-transfers.png");
+var _tenmoMoneyTransfersPngDefault = parcelHelpers.interopDefault(_tenmoMoneyTransfersPng);
+var _uppercrustPizzaPng = require("./assets/img/project-img/uppercrust-pizza.png");
+var _uppercrustPizzaPngDefault = parcelHelpers.interopDefault(_uppercrustPizzaPng);
+var _virtualVendingMachinePng = require("./assets/img/project-img/virtual-vending-machine.png");
+var _virtualVendingMachinePngDefault = parcelHelpers.interopDefault(_virtualVendingMachinePng);
+var _websiteLayoutCssGridPng = require("./assets/img/project-img/website-layout-css-grid.png");
+var _websiteLayoutCssGridPngDefault = parcelHelpers.interopDefault(_websiteLayoutCssGridPng);
+var _email = require("./scripts/email");
+var _emailDefault = parcelHelpers.interopDefault(_email);
+var _copyEmail = require("./scripts/copyEmail");
+var _copyEmailDefault = parcelHelpers.interopDefault(_copyEmail);
 var _scrollReveal = require("./scripts/scrollReveal");
 var _scrollRevealDefault = parcelHelpers.interopDefault(_scrollReveal);
 var _tiltAnimation = require("./scripts/tiltAnimation");
 var _tiltAnimationDefault = parcelHelpers.interopDefault(_tiltAnimation);
 var _scrollRevealConfig = require("./data/scrollRevealConfig");
+(0, _projectsDefault.default).forEach((project)=>(0, _addProjectDefault.default)(project));
+(0, _copyEmailDefault.default)((0, _emailDefault.default));
 (0, _scrollRevealDefault.default)((0, _scrollRevealConfig.targetElements), (0, _scrollRevealConfig.defaultProps));
 (0, _tiltAnimationDefault.default)();
 
-},{"./scripts/scrollReveal":"54rka","./scripts/tiltAnimation":"72kAb","./data/scrollRevealConfig":"5aORV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"54rka":[function(require,module,exports) {
+},{"./scripts/projects":"XG5WM","./scripts/addProject":"aYYwH","./scripts/email":"dK53n","./scripts/copyEmail":"fCGR5","./scripts/scrollReveal":"54rka","./scripts/tiltAnimation":"72kAb","./data/scrollRevealConfig":"5aORV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./assets/img/project-img/background-gradient-generator.png":"8oxxJ","./assets/img/project-img/flashcards-study-application.png":"1JGGF","./assets/img/project-img/flask-portfolio.png":"2U9Wf","./assets/img/project-img/guess-the-number.png":"51a0b","./assets/img/project-img/password-checker-haveibeenpwned.png":"91ofb","./assets/img/project-img/pokemon-breeding-compatibility-checker.png":"2F99l","./assets/img/project-img/pokemon-stat-calculator.png":"8TFH9","./assets/img/project-img/robofriends.png":"745rP","./assets/img/project-img/scrape-hacker-news-top-stories.png":"bK6Nb","./assets/img/project-img/smartbrain-face-detection.png":"jrvKx","./assets/img/project-img/tenmo-money-transfers.png":"joEZz","./assets/img/project-img/virtual-vending-machine.png":"2nW00","./assets/img/project-img/website-layout-css-grid.png":"Va8MV","./assets/img/project-img/uppercrust-pizza.png":"ikWyZ"}],"XG5WM":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-function initScrollReveal(targetElements, defaultProps) {
-    if (!targetElements.length) return;
-    ScrollReveal({
-        reset: false
-    });
-    targetElements.forEach(({ element , animation  })=>{
-        ScrollReveal().reveal(element, Object.assign({}, defaultProps, animation));
-    });
-}
-exports.default = initScrollReveal;
+const projects = [
+    {
+        title: "UpperCrust Pizza",
+        description: "Developed Vue front end of a mobile-first, responsively designed, full-stack web application for a hypothetical pizza shop, enabling customers to place orders and employees to manage menu. Instituted routing with Vue Router and managed state with Vuex. Maintained close communication with back-end team to ensure seamless integration between client and server.",
+        highlights: "Vue, Vuex, Vue Router, Java, Spring Boot, PostgreSQL, JSON Web Tokens (JWT), RESTful API, Responsive",
+        imagePath: "uppercrust-pizza.d2e8b87c.png",
+        seeLiveLink: "https://d-mcneil.github.io/uppercrust-pizza",
+        firstSourceCodeLink: "https://github.com/d-mcneil/uppercrust-pizza/tree/main/vue",
+        firstSourceCodeLabel: "Source Code - Front",
+        secondSourceCodeLink: "https://github.com/d-mcneil/uppercrust-pizza/tree/main/java",
+        secondSourceCodeLabel: "Source Code - Back"
+    },
+    {
+        title: "Flashcards Study Application",
+        description: "Engineered a full-stack, progressive web application with responsive design using React, Redux, Node, Express, and PostgreSQL that lets users create, store, modify, study, and delete their own flashcard decks. Incorporated the JavaScript Web Speech API to add read-aloud functionality.",
+        highlights: "React, Redux, Node, Express, PostgreSQL, CRUD, PWA, Responsive",
+        imagePath: "flashcards-study-application.1abcfa40.png",
+        seeLiveLink: "https://d-mcneil.github.io/flashcards",
+        firstSourceCodeLink: "https://github.com/d-mcneil/flashcards",
+        firstSourceCodeLabel: "Source Code - Front",
+        secondSourceCodeLink: "https://github.com/d-mcneil/flashcards-api",
+        secondSourceCodeLabel: "Source Code - Back"
+    },
+    {
+        title: "TEnmo Money Transfers",
+        description: "Employed pair programming methodology to collaboratively develop a Java Spring Boot application that models money transfers between users. Secured REST API endpoints using JSON Web Tokens (JWT) for authentication. Encapsulated interactions with PostgreSQL database utilizing the DAO design pattern. Performed integration testing and data validation to maintain data integrity.",
+        highlights: "Java, Spring Boot, PostgreSQL, JSON Web Tokens (JWT), RESTful API, Integration Testing, JUnit, DAO Design Pattern, Object-Oriented Programming (OOP)",
+        imagePath: "tenmo-money-transfers.ab953f30.png",
+        firstSourceCodeLink: "https://github.com/d-mcneil/tenmo-transfers",
+        firstSourceCodeLabel: "Source Code",
+        imageLink: "https://github.com/d-mcneil/tenmo-transfers"
+    },
+    {
+        title: "Virtual Vending Machine",
+        description: "Collaborated with a fellow software developer to design a Java-based, virtual vending machine. Demonstrated proficiency in applying the 4 main principles of object-oriented programming, resulting in an extensible, maintainable codebase. Utilized file I/O operations effectively to track inventory and log user activity. Wrote unit tests to ensure proper functionality.",
+        highlights: "Java, Unit Testing, JUnit, OOP",
+        imagePath: "virtual-vending-machine.c218e313.png",
+        seeLiveLink: "https://replit.com/@dmcneil/vending-machine?v=1",
+        firstSourceCodeLink: "https://github.com/d-mcneil/vending-machine",
+        firstSourceCodeLabel: "Source Code"
+    },
+    {
+        title: "Pok\xe9mon Stat Calculator",
+        description: "Created a front-end, mobile-first, progressive web application with responsive design using React and Redux. Implemented client-side routing with React Router. Connected to the Pok\xe9API to automatically populate input fields.",
+        highlights: "React, Redux, React Router, PWA, Responsive",
+        imagePath: "pokemon-stat-calculator.c37739b7.png",
+        seeLiveLink: "https://d-mcneil.github.io/pokemon-calculator/",
+        firstSourceCodeLink: "https://github.com/d-mcneil/pokemon-calculator",
+        firstSourceCodeLabel: "Source Code"
+    },
+    {
+        title: "SmartBrain Face Detection",
+        description: "Developed a full-stack web application with responsive design using React, Node, Express, and PostgreSQL as part of Zero to Mastery Academy’s Complete Web Developer curriculum. Integrated Clarifai's API to detect faces in images, the user’s total score is increased, and their rank is displayed compared to all SmartBrain users.",
+        highlights: "React, Node, Express, PostgreSQL, CRUD, Responsive",
+        imagePath: "smartbrain-face-detection.34cc7675.png",
+        seeLiveLink: "https://d-mcneil.github.io/smartbrain",
+        firstSourceCodeLink: "https://github.com/d-mcneil/smartbrain",
+        firstSourceCodeLabel: "Source Code - Front",
+        secondSourceCodeLink: "https://github.com/d-mcneil/smartbrain-face-detection-api",
+        secondSourceCodeLabel: "Source Code - Back"
+    },
+    {
+        title: "Pok\xe9mon Breeding Compatibility Checker",
+        description: "In the main Pok\xe9mon games, Pok\xe9mon can breed with other Pok\xe9mon in their egg group. This app lets you search by Pok\xe9mon to find those it can breed with.",
+        highlights: "React, Redux, Bootstrap, PWA, Responsive",
+        // picture from https://www.ign.com/wikis/pokemon-go/Eggstravaganza_Event_-_April_2017
+        imagePath: "pokemon-breeding-compatibility-checker.0b46d72c.png",
+        seeLiveLink: "https://d-mcneil.github.io/pokemon-breeding-compatibility-checker",
+        firstSourceCodeLink: "https://github.com/d-mcneil/pokemon-breeding-compatibility-checker",
+        firstSourceCodeLabel: "Source Code"
+    },
+    {
+        title: "RoboFriends",
+        description: "Search through all of your friends (personified as robots) to find their contact information.",
+        highlights: "React, Redux, PWA, Responsive",
+        imagePath: "robofriends.b0f367bb.png",
+        seeLiveLink: "https://d-mcneil.github.io/robofriends-redux",
+        firstSourceCodeLink: "https://github.com/d-mcneil/robofriends-redux",
+        firstSourceCodeLabel: "Source Code"
+    },
+    {
+        title: "Website Layout CSS Grid",
+        description: "A sample website layout",
+        highlights: "CSS Grid, Responsive",
+        imagePath: "website-layout-css-grid.30de2e86.png",
+        seeLiveLink: "https://d-mcneil.github.io/website-layout-css-grid",
+        firstSourceCodeLink: "https://github.com/d-mcneil/website-layout-css-grid",
+        firstSourceCodeLabel: "Source Code"
+    },
+    {
+        title: "Background Gradient Generator",
+        description: "Create a simple background gradient and copy the CSS code to use it for your own website. If you aren't feeling inspired, you can generate random gradients until you find one that you like.",
+        highlights: "JavaScript, Responsive",
+        imagePath: "background-gradient-generator.f5564c70.png",
+        seeLiveLink: "https://d-mcneil.github.io/background-gradient-generator",
+        firstSourceCodeLink: "https://github.com/d-mcneil/background-gradient-generator",
+        firstSourceCodeLabel: "Source Code"
+    },
+    {
+        title: "Password Checker haveibeenpwned.com",
+        description: "Check passwords against the haveibeenpwned.com database to see if any of your passwords have been leaked in a data breach. Unlike simply going to haveibeenpwned.com and entering your passwords, this app lets you check passwords without sending them over the Internet (when used locally).",
+        highlights: "Python",
+        imagePath: "password-checker-haveibeenpwned.c22ad4ce.png",
+        seeLiveLink: "https://replit.com/@dmcneil/password-checker-have-i-been-pwned?v=1",
+        firstSourceCodeLink: "https://github.com/d-mcneil/password-checker-have-i-been-pwned",
+        firstSourceCodeLabel: "Source Code"
+    },
+    {
+        title: "Scrape Hacker News Top Stories",
+        description: "This app returns all of the stories on Hacker News that have more than 100 up-votes. You can choose how many pages to scrape from, but there is a 30-second delay between scraping each page.",
+        highlights: "Python, Scraper, Beautiful Soup",
+        imagePath: "scrape-hacker-news-top-stories.78a55f9b.png",
+        seeLiveLink: "https://replit.com/@dmcneil/scrape-hacker-news-top-stories?v=1",
+        firstSourceCodeLink: "https://github.com/d-mcneil/scrape-hacker-news-top-stories",
+        firstSourceCodeLabel: "Source Code"
+    },
+    {
+        title: "Flask Portfolio",
+        description: "This alternative portfolio website was created by taking a template from mashup-template.com, using the Flask framework to program the server, and hosting it on pythonanywhere.com.",
+        highlights: "Python, Flask",
+        imagePath: "flask-portfolio.a6b17744.png",
+        seeLiveLink: "https://dmcneil.pythonanywhere.com/",
+        firstSourceCodeLink: "https://github.com/d-mcneil/flask-portfolio",
+        firstSourceCodeLabel: "Source Code"
+    },
+    {
+        title: "Guess the Number",
+        description: "If you're incredibly bored and have nothing else to do, play this game against the computer where you each take turns guessing the other's number.",
+        highlights: "Python",
+        imagePath: "guess-the-number.eab515ae.png",
+        seeLiveLink: "https://replit.com/@dmcneil/guess-the-number?v=1",
+        firstSourceCodeLink: "https://github.com/d-mcneil/guess-the-number",
+        firstSourceCodeLabel: "Source Code"
+    }, 
+];
+exports.default = projects;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
@@ -585,7 +749,160 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"72kAb":[function(require,module,exports) {
+},{}],"aYYwH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const addProject = (project)=>{
+    const projectRoot = document.querySelector(".project-wrapper");
+    const row = document.createElement("div");
+    row.classList.add("row");
+    // ******************************* ADD PROJECT TEXT & BUTTONS *******************************
+    {
+        const colTextAndButtons = document.createElement("div");
+        colTextAndButtons.classList.add("col-sm-12");
+        colTextAndButtons.classList.add("col-lg-4");
+        // ******************************* CREATE PROJECT WRAPPER *******************************
+        const projectTextWrapper = document.createElement("div");
+        projectTextWrapper.classList.add("project-wrapper__text");
+        projectTextWrapper.classList.add("load-hidden");
+        // ******************************* CREATE PROJECT TITLE *******************************
+        const title = document.createElement("h3");
+        title.classList.add("project-wrapper__text-title");
+        title.innerText = project.title;
+        // ******************************* CREATE PROJECT DESCRIPTION *******************************
+        const description = document.createElement("p");
+        description.classList.add("justify");
+        description.innerText = project.description;
+        // ******************************* CREATE PROJECT HIGHLIGHTS *******************************
+        const highlights = document.createElement("p");
+        {
+            highlights.classList.add("mb-4");
+            const isHighlightsSingular = project.highlights.split(",").length === 1;
+            const highlightsTitle = document.createElement("span");
+            highlightsTitle.innerText = `Highlight${isHighlightsSingular ? "" : "s"}: `;
+            highlightsTitle.classList.add("highlights-title");
+            const highlightsText = document.createElement("span");
+            highlightsText.innerText = `${project.highlights}`;
+            highlightsText.classList.add("highlights");
+            highlights.appendChild(highlightsTitle);
+            highlights.appendChild(highlightsText);
+        }
+        // ******************************* CREATE SEE LIVE & SOURCE CODE BUTTONS *******************************
+        const buttonWrapper = document.createElement("div");
+        {
+            buttonWrapper.classList.add("project-button-wrapper");
+            const buttons = [];
+            let anchorSeeLive;
+            let firstSourceCode;
+            let secondSourceCode;
+            if (project.seeLiveLink) {
+                anchorSeeLive = document.createElement("a");
+                anchorSeeLive.setAttribute("href", project.seeLiveLink);
+                anchorSeeLive.innerText = "See Live";
+                buttons.push(anchorSeeLive);
+            }
+            if (project.firstSourceCodeLink) {
+                firstSourceCode = document.createElement("a");
+                firstSourceCode.setAttribute("href", project.firstSourceCodeLink);
+                firstSourceCode.innerText = project.firstSourceCodeLabel;
+                firstSourceCode.classList.add("plain-text-button");
+                buttons.push(firstSourceCode);
+            }
+            if (project.secondSourceCodeLink) {
+                secondSourceCode = document.createElement("a");
+                secondSourceCode.setAttribute("href", project.secondSourceCodeLink);
+                secondSourceCode.innerText = project.secondSourceCodeLabel;
+                secondSourceCode.classList.add("plain-text-button");
+                buttons.push(secondSourceCode);
+            }
+            buttons.forEach((button)=>{
+                button.setAttribute("rel", "noreferrer");
+                button.setAttribute("target", "blank");
+                button.classList.add("cta-btn");
+                buttonWrapper.appendChild(button);
+            });
+        }
+        // ******************************* FINISH ADDING PROJECT TEXT & BUTTONS *******************************
+        projectTextWrapper.appendChild(title);
+        projectTextWrapper.appendChild(description);
+        projectTextWrapper.appendChild(highlights);
+        projectTextWrapper.appendChild(buttonWrapper);
+        colTextAndButtons.appendChild(projectTextWrapper);
+        row.appendChild(colTextAndButtons);
+    }
+    // ******************************* ADD PROJECT IMAGE *******************************
+    {
+        const colImage = document.createElement("div");
+        colImage.classList.add("col-sm-12");
+        colImage.classList.add("col-lg-8");
+        const projectImageWrapper = document.createElement("div");
+        projectImageWrapper.classList.add("project-wrapper__image");
+        projectImageWrapper.classList.add("load-hidden");
+        const anchorImage = document.createElement("a");
+        anchorImage.setAttribute("rel", "noreferrer");
+        anchorImage.setAttribute("target", "blank");
+        anchorImage.setAttribute("href", project.imageLink ? project.imageLink : project.seeLiveLink);
+        const jsTiltWrapper = document.createElement("div");
+        jsTiltWrapper.classList.add("thumbnail");
+        jsTiltWrapper.classList.add("rounded");
+        jsTiltWrapper.classList.add("js-tilt");
+        jsTiltWrapper.setAttribute("data-tilt", "true");
+        jsTiltWrapper.setAttribute("data-tilt-max", "4");
+        jsTiltWrapper.setAttribute("data-tilt-glare", "true");
+        jsTiltWrapper.setAttribute("data-tilt-max-glare", "0.5");
+        const img = document.createElement("img");
+        img.setAttribute("alt", `Project Banner Image for ${project.title}`);
+        img.classList.add("project-img");
+        img.classList.add("img-fluid");
+        img.src = `${project.imagePath}`;
+        // ******************************* FINISH PROJECT IMAGE *******************************
+        jsTiltWrapper.appendChild(img);
+        anchorImage.appendChild(jsTiltWrapper);
+        projectImageWrapper.appendChild(anchorImage);
+        colImage.appendChild(projectImageWrapper);
+        row.appendChild(colImage);
+    }
+    projectRoot.appendChild(row);
+};
+exports.default = addProject;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dK53n":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const email = "dean.mcneil.developer@gmail.com";
+exports.default = email;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fCGR5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+// have to create file in same directory: email.js
+// the only 2 lines that go in email.js are:
+// const email = "<my-email-here>";
+// export default email;
+const copyEmailButton = document.getElementById("copy-email-button");
+const handleCopyEmail = (email)=>{
+    navigator.clipboard.writeText(email);
+};
+const addCopyEmailButtonListener = (email)=>{
+    copyEmailButton.addEventListener("click", ()=>handleCopyEmail(email));
+};
+exports.default = addCopyEmailButtonListener;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"54rka":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function initScrollReveal(targetElements, defaultProps) {
+    if (!targetElements.length) return;
+    ScrollReveal({
+        reset: false
+    });
+    targetElements.forEach(({ element , animation  })=>{
+        ScrollReveal().reveal(element, Object.assign({}, defaultProps, animation));
+    });
+}
+exports.default = initScrollReveal;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"72kAb":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _vanillaTilt = require("vanilla-tilt");
@@ -1023,6 +1340,82 @@ const targetElements = [
     }, 
 ];
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire6aa4")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8oxxJ":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "background-gradient-generator.f5564c70.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"1JGGF":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "flashcards-study-application.1abcfa40.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"2U9Wf":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "flask-portfolio.a6b17744.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"51a0b":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "guess-the-number.eab515ae.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"91ofb":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "password-checker-haveibeenpwned.c22ad4ce.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"2F99l":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "pokemon-breeding-compatibility-checker.0b46d72c.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"8TFH9":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "pokemon-stat-calculator.c37739b7.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"745rP":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "robofriends.b0f367bb.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"bK6Nb":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "scrape-hacker-news-top-stories.78a55f9b.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"jrvKx":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "smartbrain-face-detection.34cc7675.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"joEZz":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "tenmo-money-transfers.ab953f30.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"2nW00":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "virtual-vending-machine.c218e313.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"Va8MV":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "website-layout-css-grid.30de2e86.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"ikWyZ":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "uppercrust-pizza.d2e8b87c.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire6aa4")
 
 //# sourceMappingURL=index.975ef6c8.js.map
